@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>fan</title>
+
+		<style>
+
+			.body {
+				margin:50px;
+			}
+
+			.bar {
+				background:black;
+				height:350px;
+				width:25px;
+				position:absolute;
+				top:322px;
+				left:475px;
+				opacity:0.95;
+			}
+
+			.backMotor {
+				background:black;
+				opacity:0.5;
+				position:absolute;
+				top:221px;
+				left:428px;
+				width:115.5px;
+				height:115.5px;
+				border-radius:50%;
+			}
+
+			.fanMiddle {
+				background:black;
+				position:absolute;
+				top:265px;
+				left:475px;
+				width:25px;
+				height:25px;
+				border-radius:50%;
+				opacity:.95;
+
+			}
+
+			.fanTopRight {
+				width: 70px;
+				height: 90px;
+				background: black;
+				opacity:.95;
+				border-radius:30px;
+				transform:rotate(45deg) skew(20deg);
+				position:absolute;
+				top:163px;
+				left:456px;
+				border:1px white solid;
+			}
+
+			.fanBottomRight {
+				width: 70px;
+				height: 90px;
+				background: black;
+				opacity:.95;
+				border-radius:30px;
+				transform:rotate(-45deg) skew(20deg);
+				position:absolute;
+				top:233px;
+				left:520px;
+				border:1px white solid;
+
+			}
+
+			.fanBottomLeft {
+				width: 70px;
+				height: 90px;
+				background: black;
+				opacity:.95;
+				border-radius:30px;
+				transform:rotate(55deg) skew(20deg);
+				position:absolute;
+				top:299px;
+				left:443px;
+				border:1px white solid;
+
+			}
+
+			.fanTopLeft {
+				width: 70px;
+				height: 90px;
+				background: black;
+				opacity:.95;
+				border-radius:30px;
+				transform:rotate(-55deg) skew(20deg);
+				position:absolute;
+				top:237px;
+				left:383px;
+				border:1px white solid;		
+
+			}
+
+			.frame {
+				background:transparent;
+				border: 6px solid black;
+				height:400px;
+				width:400px;
+				border-radius:50%;
+				position:absolute;
+				top:71px;
+				left:283px;
+
+			}
+
+			.insideFrame1 {
+				background:transparent;
+				border: 3px solid black;
+				height:375px;
+				width:375px;
+				border-radius:50%;
+				position:absolute;
+				top:86px;
+				left:298px;
+
+			}
+
+			.insideFrame2 {
+				background:transparent;
+				border: 3px solid black;
+				height:350px;
+				width:350px;
+				border-radius:50%;
+				position:absolute;
+				top:97px;
+				left:310px;
+
+			}
+
+			.insideFrame3 {
+				background:transparent;
+				border: 3px solid black;
+				height:325px;
+				width:325px;
+				border-radius:50%;
+				position:absolute;
+				top:110px;
+				left:322px;
+
+			}
+
+			.insideFrame4 {
+				background:transparent;
+				border: 3px solid black;
+				height:300px;
+				width:300px;
+				border-radius:50%;
+				position:absolute;
+				top:123px;
+				left:334px;
+			}
+
+			.insideFrame5 {
+				background:transparent;
+				border: 3px solid black;
+				height:275px;
+				width:275px;
+				border-radius:50%;
+				position:absolute;
+				top:135px;
+				left:346px;
+
+			}
+
+			.insideFrame6 {
+				background:transparent;
+				border: 3px solid black;
+				height:250px;
+				width:250px;
+				border-radius:50%;
+				position:absolute;
+				top:148px;
+				left:359px;
+
+			}
+
+			.insideFrame7 {
+				background:transparent;
+				border: 3px solid black;
+				height:225px;
+				width:225px;
+				border-radius:50%;
+				position:absolute;
+				top:160px;
+				left:372px;
+
+			}
+
+			.insideFrame8 {
+				background:transparent;
+				border: 3px solid black;
+				height:200px;
+				width:200px;
+				border-radius:50%;
+				position:absolute;
+				top:172px;
+				left:384px;
+
+			}
+
+			.insideFrame9 {
+				background:transparent;
+				border: 3px solid black;
+				height:175px;
+				width:175px;
+				border-radius:50%;
+				position:absolute;
+				top:184px;
+				left:397px;
+
+			}
+
+			.insideFrame10 {
+				background:transparent;
+				border: 3px solid black;
+				height:150px;
+				width:150px;
+				border-radius:50%;
+				position:absolute;
+				top:197px;
+				left:409px;
+
+			}
+
+			.insideFrame11 {
+				background:transparent;
+				border: 3px solid black;
+				height:125px;
+				width:125px;
+				border-radius:50%;
+				position:absolute;
+				top:210px;
+				left:421px;
+
+			}
+
+			.insideFrame12 {
+				background:transparent;
+				border: 3px solid black;
+				height:100px;
+				width:100px;
+				border-radius:50%;
+				position:absolute;
+				top:226px;
+				left:433px;
+
+			}
+
+			.insideFrame13 {
+				background:transparent;
+				border: 3px solid black;
+				height:75px;
+				width:75px;
+				border-radius:50%;
+				position:absolute;
+				top:238px;
+				left:446px;
+
+			}
+
+			.insideFrame14 {
+				background:transparent;
+				border: 3px solid black;
+				height:50px;
+				width:50px;
+				border-radius:50%;
+				position:absolute;
+				top:252px;
+				left:459px;
+
+			}
+
+			.insideFrame15 {
+				background:transparent;
+				border: 2px solid black;
+				height:387.5px;
+				width:387.5px;
+				border-radius:50%;
+				position:absolute;
+				top:81px;
+				left:294px;
+
+			}
+
+			.insideFrame16 {
+				background:transparent;
+				border: 2px solid black;
+				height:362.5px;
+				width:362.5px;
+				border-radius:50%;
+				position:absolute;
+				top:92px;
+				left:304px;
+
+			}
+
+			.frameCenter {
+				background:white;
+				position:absolute;
+				top:272px;
+				left:482px;
+				width:10px;
+				height:10px;
+				border-radius:50%;
+
+			}
+
+			.frameDividerVertical {
+				border: 3px solid black;
+				position:absolute;
+				top:72px;
+				left:484px;
+				height:400px;
+			}
+
+			.frameDividerHorizontal {
+				border: 3px solid black;
+				position:absolute;
+				top:72px;
+				left:484px;
+				height:403px;
+				transform:rotate(90deg);
+
+			}
+
+			.frameDividerDiagonal1 {
+				border: 3px solid black;
+				position:absolute;
+				top:72px;
+				left:484px;
+				height:403px;
+				transform:rotate(45deg);
+
+			}
+
+			.frameDividerDiagonal2 {
+				border: 3px solid black;
+				position:absolute;
+				top:72px;
+				left:484px;
+				height:403px;
+				transform:rotate(-45deg);
+
+			}
+
+			.stand1 {
+				background:black;
+				height:50px;
+				width:10px;
+				position:absolute;
+				top:652px;
+				left:483px;
+				opacity:0.95;
+				transform:rotate(90deg);
+
+			}
+
+			.stand2 {
+				background:black;
+				height:60px;
+				width:10px;
+				position:absolute;
+				top:658px;
+				left:483px;
+				opacity:0.95;
+				transform:rotate(90deg);
+
+			}
+
+			.bigStand {
+				background:black;
+				height:300px;
+				width:25px;
+				position:absolute;
+				top:556px;
+				left:483px;
+				opacity:0.95;
+				transform:rotate(90deg);
+				border-radius:10% / 20%;
+
+			}
+
+			.cordTop {
+				background:black;
+				height:170px;
+				width:6px;
+				position:absolute;
+				top:399px;
+				left:442px;
+				transform:rotate(25deg);
+			}
+
+			.cordBend{
+				background:black;
+				height:140px;
+				width:140px;
+				position:absolute;
+				top:461px;
+				left:279px;
+				border-radius:500px;
+
+			}
+
+			.cordBendCounter { 
+				background:white;
+				height:147px;
+				width:140px;
+				position:absolute;
+				top:448px;
+				left:275px;
+				border-radius:500px;
+			 }
+
+			 .cordCounterCover {
+			 	background:white;
+				height:20px;
+				width:70px;
+				position:absolute;
+				top:501px;
+				left:383px;
+				transform:rotate(-65deg);
+
+			 }
+
+			 .plugHead {
+			 	width: 0;
+				height: 0;
+				border-left: 20px solid transparent;
+				border-right: 20px solid transparent;
+				border-top: 30px solid black;
+				position:absolute;
+				top:561px;
+				left:273px;
+				border-radius:20px;
+
+			 }
+
+			 .outlet {
+			 	background:transparent;
+			 	border: 1px solid black;
+			 	width: 50px;
+				height: 50px;
+				position:absolute;
+				top:550px;
+				left:268px;
+				border-radius:10px;
+
+			 }
+
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<div class="bar"></div>
+
+		<div class="backMotor"></div>
+
+		<div class="fanMiddle"></div>
+
+		<div class="fanTopRight"></div>
+
+		<div class="fanBottomRight"></div>
+
+		<div class="fanBottomLeft"></div>
+
+		<div class="fanTopLeft"></div>
+
+		<div class="frame"></div>
+
+		<div class="insideFrame1"></div>
+
+		<div class="insideFrame2"></div>
+
+		<div class="insideFrame3"></div>
+
+		<div class="insideFrame4"></div>
+
+		<div class="insideFrame5"></div>
+
+		<div class="insideFrame6"></div>
+
+		<div class="insideFrame7"></div>
+
+		<div class="insideFrame8"></div>
+
+		<div class="insideFrame9"></div>
+
+		<div class="insideFrame10"></div>
+
+		<div class="insideFrame11"></div>
+
+		<div class="insideFrame12"></div>
+
+		<div class="insideFrame13"></div>
+
+		<div class="insideFrame14"></div>
+
+		<div class="insideFrame15"></div>
+
+		<div class="insideFrame16"></div>
+
+		<div class="frameDividerHorizontal"></div>
+
+		<div class="frameDividerVertical"></div>
+
+		<div class="frameDividerDiagonal1"></div>
+
+		<div class="frameDividerDiagonal2"></div>
+
+		<div class="frameCenter"></div>
+
+		<div class="stand1"></div>
+
+		<div class="stand2"></div>
+
+		<div class="bigStand"></div>
+
+		<div class="cordTop"></div>
+
+		<div class="cordBend"></div>
+
+		<div class="cordBendCounter"></div>
+
+		<div class="cordCounterCover"></div>
+
+		<div class="plugHead"></div>
+
+		<div class="outlet"></div>
+
+	</body>
+
+</html>
