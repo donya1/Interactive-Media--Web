@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Eczar|Raleway');
+
+body {
+	grid-template-columns:3fr;
+	font-family:"Raleway";
+	font-size:17px;
+	color: #f23615;
+}
+
+a {
+	color:#f23615;
+}
+
+#line {
+	width:469px;
+	height:4px;
+	background:#f23615;
+	position:fixed;
+	top:63px;
+	left:13px;
+}
+
+#TitleContainer {
+	max-width:383px;
+	position:fixed;
+	top:-450px;
+	left:-487px;
+	margin:92vh;
+	padding:10px;
+}
+
+.mainTitle {
+	font-family: "Eczar";
+	font-size:87px;
+	color:#f23615;
+	text-align:left;
+	line-height:79px;
+}
+
+#IntroContainer {
+	max-width:500px;
+	position:absolute;
+	top:364px;
+	left:582px;
+	line-height:1.3;
+}
+
+#subhead {
+	font-family: "Eczar";
+	font-weight:bold;
+	font-size:45px;
+	color:#f23615;
+
+}
+
+.event {
+	display:grid;
+	grid-template-columns: 200px 400px;
+	grid-column-gap:1em;
+	padding:0.5em;
+	position: relative;
+	top: 890px;
+	left: 475px;
+}
+
+.date {
+	text-align:right;
+	font-family: "Eczar";
+	font-weight:bold;
+	font-size:15px;
+	letter-spacing:0.05em;
+
+
+}
+
+.eventTitle {
+	font-weight:bold;
+	letter-spacing:0.03em;
+}
+
+.name {
+	font-variant:small-caps;
+	letter-spacing:0.05em;
+}
+
+.affiliation {
+	font-variant:normal;
+	font-style:italic;
+	font-size:12px;
+}
+
+.event:hover {
+	background:#4b4c4f;
+	color:#f204ee;
+}
+
