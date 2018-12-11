@@ -1,0 +1,146 @@
+/*MAKING EACH IMAGE PARALAX SO IT WOULD MOVE ON MOUSEMOVE don't know how to combine with flickity*/
+/*.origin {
+	width:100%;
+	height:500px;
+	overflow:hidden;
+	background-image: url("images/Org-05.png"),
+					  url("images/Org-04.png"),
+					  url("images/Org-03.png"),
+					  url("images/Org-02.png"),
+					  url("images/Org-01.png");
+	background-size:auto 100%;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	position: relative;
+}
+
+.nationalization {
+	width:100%;
+	height:500px;
+	overflow:hidden;
+	background-image: url("images/Ntnl-03.png"),
+					  url("images/Ntnl-02.png"),
+					  url("images/Ntnl-01.png");
+	background-size:auto 100%;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	position: relative;
+
+}*/
+
+/*WRAPAROUND CAROUSEL FLICKITY*/
+
+/*.carousel-cell{
+	width:66%;
+	height:500px;
+	margin-right:10px;
+	background:#8C8;
+	border-radius: 5px;
+	counter-increment: carousel-cell;
+	text-align: center;
+}
+
+.carousel-cell: before{
+	display:block;
+	text-align:center;
+	content:counter(carousel-cell);
+	line-height: 200px;
+	font-size:80px;
+	color:white;
+}
+
+#Org{
+	background-image:url("images/Org-01.png");
+	background-size:cover;
+}*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Hind+Guntur');
+
+*{ box-sizing: border-box; }
+
+body{
+	font-family: sans-serif;
+	background-color:#d6d6d6;
+	margin-top:0px;
+	margin-right:0px;
+	margin-left:0px;
+}
+
+html{ overflow-y:scroll; }
+
+.carousel {
+	background:#d6d6d6;
+}
+
+.carousel-cell img {
+	display: block;
+	height:650px;
+}
+
+.annotation{
+	width:900px;
+	height:60px;
+	justify-content:center;
+	background-color:black;
+	font-family:Hind Guntur;
+	font-weight:bold;
+	font-style:italic;
+	color:white;
+	opacity:0.7;
+	display:flex;
+	position:absolute;
+	top:35%;
+	font-size:1.5vw;
+	float:right;
+	align-items:center;
+	margin:37px;
+	padding:10px;
+	letter-spacing:1.3px;
+	line-height:1.2;
+}
+
+.flickity-button{
+	background:transparent;
+/*	display:none;*/
+}
+
+.flickity-button:hover{
+	background:black;
+	opacity:0.3;
+}
+
+.flickity-prev-next-button{
+	width:50px;
+	height:50px;
+	border-radius:6px;
+}
+
+.flickity-button-icon{
+	fill:white;
+}
+
+.flickity-page-dots{
+	bottom:-22px;
+}
+
+.flickity-page-dots .dot{
+	height:4px;
+	width:40px;
+	margin:0;
+	border-radius:0;
+
+}
+
+@media (max-width: 800px) and (orientation: portrait) {
+	.annotation{
+		width:350px;
+		height:60px;
+		font-size: 3vw;
+		position:absolute;
+		top:85%;
+		left:28%;
+	}
+}
+
+

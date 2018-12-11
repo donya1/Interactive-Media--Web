@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- JQUERY ACESS BEFORE FLICKITY AS IT USES JQUERY -->
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<!-- FlICKITY FILES (LIKNKED VIA CDN) -->
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<!-- STYLESHEET MUST COME AFTER FLICKITY FILES BECAUSE CALLING ON CODE IN CDN -->
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<div class="carousel" data-flickity='{"imagesLoaded": true}'>
+		<div class="carousel-cell">
+			<img src="css/images/carousel-01.png">
+			<div class="annotation" id="origins">Oil is discovered in southern Iran by William Knox D'Arcy of Britain in 1908.</div>
+		</div>
+		<div class="carousel-cell">
+			<img src="css/images/carousel-02.png">
+			<div class="annotation" id="nationalization">Mohammad Mossadegh nationalizes Iranian oil in 1951; pushing out the Anglo-Persian Oil Company (Later renamed British Petroleum).</div>
+		</div>
+		<div class="carousel-cell">
+			<img src="css/images/carousel-03.png">
+			<div class="annotation" id="coup">In August 1953, Mossadegh is ousted during a covert coup led by the U.S. and Britain, returning control of Iranian Oil to Western powers.</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
