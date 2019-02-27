@@ -1,0 +1,181 @@
+/*font import*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+/*selecting all elements = *; ::after/::before is inserting something after/before;*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*creating navigation buttons*/
+/*button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}*/
+
+body {
+  font: normal 16px/1.5 "Roboto Mono", sans-serif;
+  background: black;
+  color: black;
+}
+
+/*.section {
+  background: black;
+  padding: 50px 0;
+}
+*/
+
+/*timeline*/
+.timeline{
+	white-space: nowrap;
+/*	overflow-x:hidden;*/
+}
+
+.timeline ol{
+	font-size: 0;
+	width: 100vw;
+	padding:250px 0;
+	transition: all 1s;
+}
+
+.timeline ol li{
+	position: relative;
+	display: inline-block;
+	list-style-type: none;
+	width:160px;
+	height:3px;
+	background: white
+}
+
+.timeline ol li:last-child {
+	width:280px;
+}
+
+.timeline ol li:not(:first-child) {
+	margin-left:11px;
+}
+
+.timeline ol li:not(:last-child)::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left:calc(100% + 1px);
+	bottom:0;
+	width:12px;
+	height:12px;
+	transform:translateY(-50%);
+	border-radius:50%;
+	background:white;
+}
+
+.timeline ol li div {
+	position:absolute;
+	left: calc(100% + 7px);
+	width: 280px;
+	padding:15px;
+	font-size: 1rem;
+	white-space: normal;
+	color: white;
+	background: transparent;
+}
+
+/*.timeline ol li div::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}*/
+
+
+/*.timeline ol li:nth-child(odd) div {
+  top: -16px;
+  transform: translateY(-100%);
+}
+
+
+.timeline ol li:nth-child(even) div {
+  top: calc(100% + 16px);
+}*/
+
+
+.timeline time {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 68px;
+}
+
+#oOne {
+	border-style:dashed;
+	height:1px;
+	width:150px;
+}
+
+#a {
+	left: calc(100% + 6px);
+    top: 7px;
+    border-left: solid white 1px;
+    height: 110px;
+    padding: 5px;
+}
+
+#oEight {
+	width:300px;
+}
+
+#b {
+	left: calc(100% + 6px);
+    top: 7px;
+    border-left: solid white 1px;
+    height: 150px;
+    padding: 5px;
+}
+
+#oNine {
+	width: 70px;
+}
+
+#c {
+	transform:translateY(-100%);
+	left: calc(100% + 6px);
+    top: 7px;
+    border-left: solid white 1px;
+    height: 200px;
+    padding: 5px;
+}
+
+#Fourteen {
+
+}
+
+#thirtyThree {
+
+}
+
+#thirtyFive {
+
+}
+
+#fourtySeven {
+
+}
+
+.titleimg {
+	height:300px;
+	width:350px;
+	position:relative;
+	top:-300px;
+	left:-40px;
+}
+
+
+
+
